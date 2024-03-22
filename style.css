@@ -15,7 +15,7 @@
 }
 body{
     color: var(--def_color);
-    background: url(/Sparrow-Music/Image_&_Logo/image/_be3bcbac-95ce-4e84-805d-1e4380ed9297.jpeg) no-repeat;
+    background: url(/Sparrow-Music/Image_&_Logo/image/background.webp) no-repeat;
     background-size: cover;
     background-position: center center;
 }
@@ -110,7 +110,7 @@ nav ul li a:hover::after{
 
 
 .main_content{
-    background: url(/Sparrow-Music/Image_&_Logo/image/_be3bcbac-95ce-4e84-805d-1e4380ed9297.jpeg) no-repeat;
+    background: url(/Sparrow-Music/Image_&_Logo/image/background.webp) no-repeat;
     background-size: cover;
     background-position: center center;
 }
