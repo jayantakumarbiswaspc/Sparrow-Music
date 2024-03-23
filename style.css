@@ -299,7 +299,7 @@ nav ul li a:hover::after{
         width: 35%;
     }
     .footer_content .footer_content_right i{
-        font-size: 2.2rem;
+        font-size: 2.6rem;
     }
     .footer_content .footer_content_right i:active{
         font-size: 1.2rem;
@@ -363,7 +363,7 @@ nav ul li a:hover::after{
         /* background-color: blue; */
     }
     .footer_content .footer_content_right i{
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
     .footer_content .footer_content_right i:active{
         font-size: 1rem;
@@ -436,7 +436,7 @@ nav ul li a:hover::after{
     }
     .footer_content .footer_content_right i{
         margin: 10px;
-        font-size: 1rem;
+        font-size: 1.6rem;
         transition: all .08s ease-in-out;
     }
     .footer_content .footer_content_right i:active{
