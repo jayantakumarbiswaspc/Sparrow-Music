@@ -93,16 +93,16 @@ nav ul li a{
 nav ul li a::after{
     content: '';
     position: absolute;
-    bottom: -3px;
+    bottom: -4px;
     left: 0;
-    height: 2px;
+    height: 3px;
     width: 100%;
     border-radius: 20px;
     background-color: white;
     transition: all .1s ease-in-out;
 }
 nav ul li a:hover::after{
-    bottom: 10px;
+    bottom: 8px;
 }
 
 
@@ -113,9 +113,12 @@ nav ul li a:hover::after{
     background: url(/Sparrow-Music/Image_&_Logo/image/background.webp) no-repeat;
     background-size: cover;
     background-position: center center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .main_content .main_content_text{
-    height: 80%;
+    height: 60%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -170,6 +173,10 @@ nav ul li a:hover::after{
     font-size: 2.1rem;
     border: 5px;
 }
+.main_content .main_content_button .button button:hover:active{
+    background: transparent;
+    color: var(--def_color);
+}
 
 
 
@@ -193,7 +200,7 @@ nav ul li a:hover::after{
 
 .footer_content .footer_content_right{
     height: 100%;
-    width: 30%;
+    width: 20%;
     padding-right: 1%;
     display: flex;
     align-items: center;
@@ -202,7 +209,7 @@ nav ul li a:hover::after{
 }
 .footer_content .footer_content_right a{
     height: var(--def_height_width);
-    width: 30%;
+    width: 20%;
     display: grid;
     place-items: center;
     text-decoration: none;
@@ -211,8 +218,229 @@ nav ul li a:hover::after{
 }
 .footer_content .footer_content_right i{
     margin: 10px;
-    font-size: 4rem;
+    font-size: 3rem;
+    transition: all .08s ease-in-out;
 }
 .footer_content .footer_content_right i:active{
-    font-size: 3rem;
+    font-size: 2rem;
+}
+
+
+
+
+@media screen and (min-width: 1080px) and (max-width: 1200px){
+    header,footer{
+        height: 8vh;
+    }
+    main{
+        height: 84vh;
+    }
+    .header_content .header_content_navigation{
+        width: 35%;
+        /* background-color: aqua; */
+    }
+
+    
+    
+    
+    
+
+    .footer_content .footer_content_left{
+        width: 30%;
+        /* background-color: red; */
+    }
+    
+    .footer_content .footer_content_right i{
+        margin: 10px;
+        font-size: 2.5rem;
+        transition: all .1s ease-in-out;
+    }
+    .footer_content .footer_content_right i:active{
+        font-size: 1.5rem;
+    } 
+}
+@media screen and (min-width: 720px) and (max-width: 1079px){
+    header,footer{
+        height: 8vh;
+    }
+    
+    main{
+        height: 84vh;
+    }
+
+    .header_content .header_content_navigation{
+        width: 40%;
+        /* background-color: aqua; */
+    }
+    nav ul li a:hover::after{
+        bottom: 2px;
+    }
+    
+    
+    
+    
+    
+
+
+    .main_content .main_content_text h1{
+        width: 80%;
+        /* background-color: blue; */
+    }
+   
+    .footer_content .footer_content_left{       
+        width: 40%;
+        /* background-color: red; */
+    }
+    .footer_content .footer_content_left h6{
+        font-size: 1.3rem;
+    }
+    
+    .footer_content .footer_content_right{
+        width: 35%;
+    }
+    .footer_content .footer_content_right i{
+        font-size: 2.2rem;
+    }
+    .footer_content .footer_content_right i:active{
+        font-size: 1.2rem;
+    }
+    
+}
+@media screen and (min-width: 480px) and (max-width: 719px){
+    header,footer{
+        height: 5vh;
+    }
+    
+    main{
+        height: 90vh;
+    }
+
+    .header_content .header_content_navigation{
+        display: none;
+    }
+
+    
+    
+    
+    
+    
+
+
+    .main_content .main_content_text h1{
+        font-size: 400%;
+        width: 80%;
+        /* background-color: blue; */
+    }
+
+    .main_content .main_content_button .button{
+        width: 70%;
+    }
+
+    .main_content .main_content_button .button a button{
+        height: 60%;
+        font-size: 2rem;
+    }
+    .main_content .main_content_button .button button:active{
+        font-size: 1rem;
+    }
+    
+    
+    
+
+    .footer_content .footer_content_left{
+        width: 50%;
+    }
+    .footer_content .footer_content_left h6{
+        font-size: 120%;
+    }
+    
+    .footer_content .footer_content_right{
+        width: 30%;
+        /* background-color: red; */
+    }
+    .footer_content .footer_content_right a{
+        width: 30%;
+        /* background-color: blue; */
+    }
+    .footer_content .footer_content_right i{
+        font-size: 2rem;
+    }
+    .footer_content .footer_content_right i:active{
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width: 240px) and (max-width: 479px){
+    header,footer{
+        height: 5vh;
+    }
+    
+    main{
+        height: 90vh;
+    }
+    
+    .header_content .header_content_logo{
+        width: 40%;
+        /* background-color: red; */
+    }
+    .header_content .header_content_logo img{
+        height: 60%;
+    }
+    .header_content .header_content_navigation{
+        display: none;
+    }
+
+    
+    
+    
+    
+    
+
+
+    .main_content .main_content_text h1{
+        font-size: 3rem;
+        width: 98%;
+        /* background-color: blue; */
+    }
+    .main_content .main_content_button{
+        height: 30%;
+    }
+    .main_content .main_content_button .button{
+        width: 60%;
+        flex-direction: column;
+    }
+    .main_content .main_content_button .button a{
+        width: 100%;
+    }
+    .main_content .main_content_button .button a button{
+        height: 50%;
+        width: 100%;
+    }
+
+    
+
+    .footer_content .footer_content_left{
+        width: 50%;
+        /* background-color: red; */
+    }
+    .footer_content .footer_content_left h6{
+        font-size: .7rem;
+    }
+    
+    .footer_content .footer_content_right{
+        width: 40%;
+        /* background-color: red; */
+    }
+    .footer_content .footer_content_right a{
+        width: 30%;
+        /* background-color: blue; */
+    }
+    .footer_content .footer_content_right i{
+        margin: 10px;
+        font-size: 1rem;
+        transition: all .08s ease-in-out;
+    }
+    .footer_content .footer_content_right i:active{
+        font-size: .1rem;
+    }
+    
 }
